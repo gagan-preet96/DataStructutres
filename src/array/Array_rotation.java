@@ -1,5 +1,5 @@
 package array;
-
+//rotation of array by a given length
 public class Array_rotation {
 
 	

@@ -1,5 +1,5 @@
 package array;
-
+//rotaing the array using reversal technique
 public class Reverse_Array {
 
 	 void leftRotate(int arr[],int d)
