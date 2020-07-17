@@ -1,6 +1,6 @@
 package array;
 
-//to find common elements in given 3 arrays
+//to find common elements in given 3 sorted  arrays
 //approach used
 //we run a loop and traverse three arrays.
 //Let the current element traversed in ar1[] be x, in ar2[] be y and in ar3[] be z. We can have following cases inside the loop.
