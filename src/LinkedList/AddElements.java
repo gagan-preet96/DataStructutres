@@ -88,7 +88,7 @@ public class AddElements {
 		llist.push(7);
 		llist.push(1);
 		llist.append(4);
-		llist.insertAfter(llist.Head.next, 8);
+		llist.insertAfter(llist.Head.next.next, 8);
 	
 		
 		llist.print();
