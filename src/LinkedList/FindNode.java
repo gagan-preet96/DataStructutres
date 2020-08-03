@@ -1,7 +1,7 @@
 package LinkedList;
 
 //Given a Linked List and a number n, write a function that returns 
-//the value at the n’th node from the end of the Linked List.
+// find the value at the n’th node from the end of the Linked List.
 public class FindNode {
 
 	Node head;
@@ -29,7 +29,7 @@ public class FindNode {
 	{
 		int length =0;
 		Node temp= head;
-		while(temp.next != null)
+		while(temp != null)
 		{
 			length ++;
 			temp = temp.next;
@@ -38,9 +38,17 @@ public class FindNode {
 		if(length < index)
 			return;
 		
-		temp = head;
 		
-		for(int i=0;i <length -index +1;i++)
+		int res = length - index;
+		
+		if(res == 0)
+		{
+			System.out.println(head.data);
+			return;
+		}
+		
+		temp = head;
+		for(int i=1;i <length -index+1 ;i++)
 		{
 			temp=temp.next;
 		}
@@ -52,14 +60,18 @@ public class FindNode {
 
 		FindNode llist = new FindNode();
 		
-		llist.push(85);
-		llist.push(96);
-		llist.push(20);
+		llist.push(9);
+		llist.push(8);
 		llist.push(7);
-		llist.push(321);
+		llist.push(6);
+		llist.push(5);
+		llist.push(4);
+		llist.push(3);
+		llist.push(2);
+		llist.push(1);
 		
-		System.out.println("the node at 4th index is : ");
-		llist.findNode(4);
+		System.out.println("the node at 2nd index is : ");
+		llist.findNode(2);
 	}
 
 }
